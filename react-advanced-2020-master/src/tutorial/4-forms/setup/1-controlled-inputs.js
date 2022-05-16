@@ -42,11 +42,12 @@ const ControlledInputs = () => {
           <button type='submit' className='btn'>Add Person</button>
         </form>
         {people.map((person) => {
-          const { id, firstName, email } = person;
+          const { id, firstName, email, age } = person;
           return <>
             <div className="item" key={id}>
               <h4 >{firstName}</h4>
               <h4 >{email}</h4>
+              <h4 >{age}</h4>
             </div>
           </>
         })}
